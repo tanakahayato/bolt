@@ -3,12 +3,6 @@
   margin: 0 auto;
 }
 
-@media screen and ( max-width:1199px ) {
-  .fa-bolt {
-    margin-left: 10px
-  }
-}
-
 .clear_fix:after {
   content: ".";
   display: block;
@@ -26,15 +20,18 @@
   color: #333;
 }
 
-.header_wrap{
-  padding: 15px 0;
-  box-sizing: border-box;
-  background-color: #fff;
+header {
   position: fixed;
   z-index: 1;
   top: 0px;
   left: 0px;
   width: 100%;
+}
+
+.header_wrap {
+  padding: 15px 0;
+  box-sizing: border-box;
+  background-color: #fff;
 }
 
 .header_button {
@@ -45,21 +42,6 @@
   float: right;
   outline: none;
 }
-
-@media screen and ( max-width:1199px ) {
-  .header_button {
-    margin-right: 20px
-  }
-}
-
-@media screen and (max-width: 766px) {
-  .header_button {
-    display: none;
-    position: absolute;
-    top: 75px;
-    left: 0;
-    width: 100%;
-  }
 
   .header_button.is-active {
     display: block;
@@ -74,16 +56,14 @@
   color: gray;
 }
 
+main {
+  margin-top: 78px;
+}
+
 .bolt_theme {
   padding: 250px 0;
   box-sizing: border-box;
   background-color: #f2f2f2;
-}
-
-@media screen and ( max-width:766px ) {
-  .bolt_theme {
-    padding: 160px 0 130px 0;
-  }
 }
 
 .bolt_theme_txt {
@@ -91,12 +71,6 @@
   font-weight: 700;
   text-align: center;
   color: #74cfae;
-}
-
-@media screen and ( max-width:766px ) {
-  .bolt_theme_txt {
-    font-size: 80px;
-  }
 }
 
 .free_boot{
@@ -112,34 +86,14 @@
   background-color: #74cfae;
 }
 
-@media screen and ( max-width:1199px ) {
-  .what_we_can {
-    padding: 50px 0 25px 0;
-  }
-}
-
-.iphone_img {
+.iphone_wrap {
   float: left;
-}
-
-@media screen and ( max-width:1199px ) {
-  .iphone_img {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 .what_we_txt {
   font-size: 24px;
   text-align: center;
   margin-bottom: 35px;
-}
-
-@media screen and ( max-width:1199px ) {
-  .what_we_txt {
-    margin-top: 20px;
-  }
 }
 
 .lorem {
@@ -152,12 +106,6 @@
   line-height: 1.5em;
   position: inherit;
   right: 150px;
-}
-
-@media screen and ( max-width:1199px ) {
-  .lorem_txt {
-    position: static;
-  }
 }
 
 .email_me {
@@ -173,22 +121,12 @@
   float: right;
 }
 
-@media screen and ( max-width:1199px ) {
-  .email_me {
-    position: static;
-    float: none;
-    display: block;
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-}
-
 .email_me:hover {
   cursor: pointer;
 }
 
 .our_latest_work {
-  padding: 60px 0 70px 0;
+  padding: 60px 0 70px;
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
@@ -206,35 +144,20 @@
 
 .top_img {
   margin-bottom: 80px;
+  margin-right: 100px;
 }
 
 .under_img {
   margin-bottom: 90px;
-}
-
-@media screen and ( max-width:1199px ) {
-  .under_img {
-    margin-bottom: 80px;
-  }
-}
-
-.main_img {
   margin-right: 100px;
 }
 
-.main_img:last-child {
+.margin_r {
   margin-right: 0;
 }
 
 .img {
   display: inline-block;
-}
-
-@media screen and ( max-width:1199px ) {
-  .img {
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 .opacity {
@@ -247,7 +170,7 @@
 }
 
 .our {
-  padding: 70px 0 100px 0;
+  padding: 70px 0 100px;
   box-sizing: border-box;
   background-color: #4e4e4e;
 }
@@ -258,20 +181,6 @@
 
 .circle {
   margin-right: 180px;
-}
-
-@media screen and ( max-width:1199px ) {
-  .circle {
-    margin: 0 ;
-    margin-bottom: 88px;
-  }
-}
-
-@media screen and ( max-width:1199px ) {
-  .circle:last-child {
-    margin: 0 ;
-    margin-bottom: 0;
-  }
 }
 
 .circle:last-child {
@@ -299,12 +208,6 @@
   background-color: #f2f2f2;
 }
 
-@media screen and ( max-width:766px ) {
-  .sns {
-    padding: 50px 15px;
-  }
-}
-
 .sns_icons {
   text-align: center;
 }
@@ -313,13 +216,6 @@
   width: 185px;
   padding: 30px 0;
   display: inline-block;
-}
-
-@media screen and ( max-width:766px ) {
-  .icon {
-    width: auto;
-    display: block;
-  }
 }
 
 .icon:hover {
@@ -332,7 +228,7 @@
 }
 
 .footer {
-  padding: 20px 0 25px 0;
+  padding: 20px 0 25px;
   box-sizing: border-box;
   background-color: #74cfae;
 }
@@ -340,18 +236,6 @@
 .foot_txt {
   color: #fff;
   float: right;
-}
-
-@media screen and ( max-width:1199px ) {
-  .foot_txt {
-    padding-right: 20px;
-  }
-}
-
-@media screen and ( max-width:1199px ) {
-  br {
-    display: none;
-  }
 }
 
 .header__hamburger {
@@ -363,13 +247,10 @@
 }
 
 @media screen and (max-width: 766px) {
-  .header__hamburger {
-    display: block;
-    margin-right: 10px;
+  .header__hamburger__bar:last-child {
+    margin-bottom: 0;
   }
-}
 
-@media screen and (max-width: 766px) {
   .header__hamburger__bar {
     display: block;
     width: 22px;
@@ -377,10 +258,102 @@
     background-color: #ddd;
     margin-bottom: 5px;
   }
+
+  .header__hamburger {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .icon {
+    width: auto;
+    display: block;
+  }
+
+  .sns {
+    padding: 50px 15px;
+  }
+
+  .header_button {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+  }
+
+  .bolt_theme {
+    padding: 160px 0 130px 0;
+  }
+
+  .bolt_theme_txt {
+    font-size: 80px;
+  }
 }
 
-@media screen and (max-width: 766px) {
-  .header__hamburger__bar:last-child {
-    margin-bottom: 0;
+@media screen and ( max-width:1199px ) {
+  .fa-bolt {
+    margin-left: 10px
+  }
+
+  br {
+    display: none;
+  }
+
+  .foot_txt {
+    padding-right: 20px;
+  }
+
+  .circle {
+    margin: 0 0 88px;
+  }
+
+  .circle:last-child {
+    margin: 0 ;
+  }
+
+  .header_button {
+    margin-right: 20px
+  }
+
+  .what_we_can {
+    padding: 50px 0 25px;
+  }
+
+  .iphone_wrap {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .what_we_txt {
+    margin-top: 20px;
+  }
+
+  .lorem_txt {
+    position: static;
+  }
+
+  .email_me {
+    position: static;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .top_img {
+    margin: 0;
+  }
+
+  .under_img {
+    margin: 0;
+  }
+
+  .margin_r {
+    margin-bottom: 80px;
+  }
+
+  .img {
+    display: block;
   }
 }
